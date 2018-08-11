@@ -4,7 +4,8 @@
   "description": "Minimalist React PWA boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel ./index.html -p 3000",
+    "prod": "parcel build ./index.html"
   },
   "repository": {
     "type": "git",
