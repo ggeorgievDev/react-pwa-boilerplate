@@ -9,9 +9,16 @@ import {
 import createSagaMiddleware from 'redux-saga';
 
 /**
+ * The internal dependencies.
+ */
+import requestsReducer from './requests/reducer';
+
+/**
  * Combine imported reducers
  */
-const reducer = combineReducers({});
+const reducer = combineReducers({
+    requests: requestsReducer,
+});
 
 /**
  * Create Sage Midddleware
@@ -20,10 +27,12 @@ const saga = createSagaMiddleware();
 const enhancer = applyMiddleware(saga);
 
 /**
- * Export created store
+ * Create store
  */
-export default createStore(
+const store = createStore(
     reducer,
     {},
     enhancer
 );
+
+export default store;
