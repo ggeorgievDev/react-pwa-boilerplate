@@ -4,6 +4,7 @@
   "description": "Minimalist React PWA boilerplate",
   "main": "index.js",
   "scripts": {
+    "development": "npm run prod",
     "dev": "parcel ./index.html -p 3000",
     "prod": "parcel build ./index.html"
   },
@@ -28,6 +29,7 @@
     "babel-preset-react": "^6.24.1",
     "node-sass": "^4.9.3",
     "parcel-bundler": "^1.9.7",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
