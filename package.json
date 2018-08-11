@@ -25,6 +25,7 @@
   },
   "homepage": "https://gitlab.com/ggeorgiev96/react-pwa-boilerplate#README",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-plugin-transform-es2015-spread": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -34,11 +35,14 @@
     "parcel-bundler": "^1.9.7",
     "parcel-plugin-sw-precache": "^1.0.0",
     "prop-types": "^15.6.2",
+    "ramda": "^0.25.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
-    "redux-action": "^1.2.2"
+    "redux-action": "^1.2.2",
+    "redux-actions": "^2.6.1",
+    "redux-saga": "^0.16.0"
   }
 }
