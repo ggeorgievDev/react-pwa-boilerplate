@@ -2,13 +2,21 @@
  * The external dependencies.
  */
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+/**
+ * The internal dependencies.
+ */
+import Router from '../Router';
 
 class App extends React.Component {
     render() {
         return (
-            <div>
-                Hello
-            </div>
+            <BrowserRouter>
+                <React.Fragment>
+                    <Router />
+                </React.Fragment>
+            </BrowserRouter>
         );
     }
 }
